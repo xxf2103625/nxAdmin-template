@@ -138,7 +138,7 @@ export default {
         name: this.filters.name
       }
       getUserListPage(para).then(res => {
-        this.total = res.data.total
+        console.log(res.data)
         this.users = res.data.users
       })
     },
